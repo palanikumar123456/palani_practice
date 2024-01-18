@@ -1,5 +1,3 @@
 palani access git access credentials: 
 user: palanikumar123456
-old token: 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
-latest token: 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
-
+token: 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
