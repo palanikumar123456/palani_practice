@@ -8,10 +8,11 @@ def main():
     OUTPUT_FILE = "names.txt"
 
     with open(INPUT_FILE) as fin:
-        header_line = fin.read();
+        header_line = fin.readline();
+        print(header_line)
         data_lines = fin.readlines()
 
-        names = list(map(lambda x: x.split(",")[1].strip(), data_lines))
+        names = map(lambda y: y+"\n", map(lambda x: x.split(",")[1].strip(), data_lines))
         print(f"names: {names}")
         with open(OUTPUT_FILE, "w") as fout:
             fout.writelines(names)
