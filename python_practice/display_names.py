@@ -35,7 +35,6 @@ def camel_case(s):
 def add_hello(s):
     return f"hello {s}"
 
-
 def main():
     INPUT_FILE = "names.txt"
     with open("names.txt") as fin:
